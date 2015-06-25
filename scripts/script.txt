@@ -1,0 +1,11 @@
+loop 100000;
+start;
+ie 1 8,3,0,4,# p;
+delay 4;
+ie 2 s1 p;
+randomTime 2 4;
+ie 1 s4 p;
+delay 1;
+ie 2 s4 p;
+delay 2;
+end;

@@ -1,0 +1,11 @@
+loop 100000;
+start;
+ioevt 5 he,1,0,8,s4 p;
+delay 1;
+ioevt 5 s3 p;
+delay 1;
+ioevt 5 1,0,9,s4 p;
+delay 1;
+ioevt 5 s3 p;
+randomTime 4 10;
+end;
