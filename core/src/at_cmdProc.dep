@@ -1,0 +1,4 @@
+obj/at_cmdProc.o : core/src/at_cmdProc.c core/include/at_cmdProc.h \
+ core/include/at_common.h core/include/autoTest.h \
+ core/include/at_network.h core/include/keyMap.h \
+ core/include/at_network.h core/include/autoTest.h core/include/keyMap.h

@@ -1,0 +1,69 @@
+Mon Mar  7 14:49:02 2016
+doubleTalk:
+client0: 0 time
+client1: 0 time
+client2: 0 time
+client3: 0 time
+client4: 0 time
+client5: 0 time
+client6: 0 time
+client7: 0 time
+client8: 0 time
+client9: 0 time
+trebleTalk:
+client0: 0 time
+client1: 0 time
+client2: 0 time
+client3: 0 time
+client4: 0 time
+client5: 0 time
+client6: 0 time
+client7: 0 time
+client8: 0 time
+client9: 0 time
+Mon Mar  7 18:05:08 2016
+doubleTalk:
+client0: 0 time
+client1: 0 time
+client2: 0 time
+client3: 0 time
+client4: 0 time
+client5: 0 time
+client6: 0 time
+client7: 0 time
+client8: 0 time
+client9: 0 time
+trebleTalk:
+client0: 0 time
+client1: 0 time
+client2: 0 time
+client3: 0 time
+client4: 0 time
+client5: 0 time
+client6: 0 time
+client7: 0 time
+client8: 0 time
+client9: 0 time
+Tue Mar  8 17:34:52 2016
+doubleTalk:
+client0: 0 time
+client1: 0 time
+client2: 0 time
+client3: 0 time
+client4: 0 time
+client5: 0 time
+client6: 0 time
+client7: 0 time
+client8: 0 time
+client9: 0 time
+trebleTalk:
+client0: 0 time
+client1: 0 time
+client2: 0 time
+client3: 0 time
+client4: 0 time
+client5: 0 time
+client6: 0 time
+client7: 0 time
+client8: 0 time
+client9: 0 time
