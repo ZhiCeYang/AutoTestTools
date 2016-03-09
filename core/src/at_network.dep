@@ -1,0 +1,3 @@
+obj/at_network.o : core/src/at_network.c core/include/at_network.h \
+ core/include/at_common.h core/include/at_common.h \
+ core/include/autotest.h core/include/at_network.h

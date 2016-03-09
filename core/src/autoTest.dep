@@ -1,0 +1,4 @@
+obj/autoTest.o : core/src/autoTest.c core/include/at_common.h \
+ core/include/autoTest.h core/include/at_network.h \
+ core/include/at_common.h core/include/at_network.h \
+ core/include/at_cmdProc.h core/include/autoTest.h core/include/keyMap.h
