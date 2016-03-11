@@ -15,7 +15,7 @@
 #define C_POUND         '#'
 #define NEWLINE         '\n'
 
-#define MAX_CMD_NUM     18
+#define MAX_CMD_NUM     19
 #define MAX_FILE_NAME    60
 #define MAX_SC_CONTENT     256
 #define MAX_SC_LINE         500
