@@ -77,6 +77,12 @@ cmd_t gCmdLib[MAX_CMD_NUM] = {
         .func = ioevt,
     },
     {
+        .cmdName = "call",
+        .nickName = "call",
+        .example = "call: call 1(client number) 1000(tel number)",
+        .func = call,
+    },
+    {
         .cmdName = "look",
         .nickName = "l",
         .example = "look: look",
@@ -537,7 +543,8 @@ void  call(int32_t cmdNum)
         printf("%s\n",gCmdLib[cmdNum].example);
         return;
     }
-    if(atoi(gCmdParam[1]) > MAX_CLIENT-1 || atoi(gCmdParam[1]) < MIN_CLIENT){
+    clientNum = atoi(gCmdParam[1]);
+    if(clientNum > MAX_CLIENT-1 || clientNum < MIN_CLIENT){
         printf("valid client number:%d - %d\n",MIN_CLIENT,MAX_CLIENT-1);
         return;
     }
@@ -549,19 +556,16 @@ void  call(int32_t cmdNum)
     memset(&cmdObj,0,sizeof(cmdObj_t));
     memset(&msgQ_obj,0,sizeof(msgQ_t));
     snprintf(cmdObj.cmdCode,sizeof(cmdObj.cmdCode),gCmdParam[0]);
-    clientNum = atoi(gCmdParam[1]);
-    if(clientNum > MAX_CLIENT || clientNum < MIN_CLIENT){
-        return;
-    }
     msgQ_obj.clientNum = clientNum;
-    snprintf(cmdObj.cmdParamObj.shared,sizeof(cmdObj.cmdParamObj.shared),gCmdParam[2]); 
+    snprintf(cmdObj.cmdParamObj.shared,sizeof(cmdObj.cmdParamObj.shared),gCmdParam[2]);
     msgQ_obj.cmdObj = cmdObj;  
     ret = msgsnd(gMsgid, &msgQ_obj, sizeof(msgQ_t),0);
-    if(ret  == AT_FAILED){
+    if(ret  == FAILED){
         printf("msg call send failed!");
         return;
     }
 }
+
 void  setSysLogLevel(int32_t cmdNum)
 {
 
